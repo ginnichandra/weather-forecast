@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Current Weather</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet"> 
+</head>
+<body>
+<header>
+  <h1><b>WEATHER FORCAST</b></h1><br><br>
+</header>
+  <main>
+    <div>
+              <label for="city">Select a city: </label>
+              <select id="select_city" name="select_city">
+                  <option value="Montreal" data-class="verso">Montreal</option>
+                  <option value="Hyderabad" data-class="as">Hyderabad</option>
+                  <option value="Toronto" data-class="deux">Toronto</option>
+                  <option value="Missusaga" data-class="trois">Missusaga</option>
+                  <option value="Alberta" data-class="quatre">Alberta</option>
+              </select>
+              <select id="temp">
+                <option value="celcius"> c</option>
+                <option value ="f">f</option>
+              </select>
+              <button class="go"> GO </button>
+  </div>
+  <br><br><br>
+  <div>
+    <table id="tb_forecast">
+        <thead>
+            <tr><th>Hour</th><th>Temp</th><th>Wind Speed</th><th>Icon</th><th>Desc.</th></tr>
+        </thead>
+        <tbody>
+            <tr class="model">
+                <td class="hour"></td>
+                <td class="temperature"></td>
+                <td class="wind"></td>
+                <td class="icon"><img src="" alt="" /></td>
+                <td class="description"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+  </main>
+  <script src="script/main.js"></script>
+</body>
+</html>
